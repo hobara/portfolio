@@ -1750,10 +1750,12 @@
 
 			a.special:not(.button):hover:before {
 				background-color: rgba(255, 255, 255, 0.025);
+				color: yellow;
 			}
 
 			a.special:not(.button):active:before {
 				background-color: rgba(255, 255, 255, 0.075);
+				color: yellow;
 			}
 
 	strong, b {
@@ -2640,12 +2642,15 @@
 			box-shadow: none;
 		}
 
+
+
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
 				background-color: #53639e;
+				color: red;
 			}
 
 			input[type="submit"].special:active,
@@ -3136,6 +3141,18 @@
 				text-align: center;
 				width: 2.25em;
 			}
+
+		.logo-img {
+			border-radius: 100%;
+			border: solid 2px rgba(255, 255, 255, 0.125);
+			cursor: default;
+			display: inline-block;
+			font-size: 2em;
+			height: 2.25em;
+			line-height: 2.25em;
+			text-align: center;
+			width: 2.25em;
+		}
 
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
