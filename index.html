@@ -211,7 +211,7 @@
 								Talk to me, I will make one for you.<br />
 								Feel free to send me a message and let's get in touch!
 							</p>
-							<form method="post" action="#">
+							<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwFL85uXhwl5PdLIjBWLG12aZEUVsGIhqQQSfRIUyv3GcmnEvo/exec">
 								<div class="field">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
@@ -224,10 +224,15 @@
 									<label for="message">Message</label>
 									<textarea name="message" id="message" rows="4"></textarea>
 								</div>
-								<ul class="actions">
+								<!-- <ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								</ul> -->
+								<button>Send Message</button>
 							</form>
+							<div style="display:none;" id="thankyou_message">
+						    <h2>Thanks for a message!</br>
+						      I will get back to you soon!</h2>
+						  </div>
 							<ul class="contact">
 								<li class="fa-home">
 									Mission Bay By Windsor<br />
@@ -252,8 +257,9 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<!-- [if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif] -->
 			<script src="assets/js/main.js"></script>
-
+			<script data-cfasync="false" type="text/javascript"
+		  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 	</body>
 </html>
